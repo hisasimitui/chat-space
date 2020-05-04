@@ -117,7 +117,7 @@ a{
         display: flex;
         margin-bottom: 10px;
         &__talker{
-          color: white;
+          color: #999999;
           font-size: 16px;
           font-weight: bold;
         }
@@ -137,14 +137,20 @@ a{
   .form{
     height: 90px;
     padding: 20px 40px;
-    background-color: #dddddd;
-    
+    background-color: #dddddd;  
     .new_message{
       display: flex;
-    }
-      .input-box{
+      width: 100%;
+      .form__message{
         position: relative;
-        width: 100%;
+         width: 100%;
+        padding: 0 40px 0 10px;
+        
+        }
+      }
+      .form__mask{
+        position: relative;
+        width: 100;
         &__text{
           height: 50px;
           width: 100%;
@@ -160,17 +166,18 @@ a{
           cursor: pointer;
           &__file{
             display: none;
+
           }
         }
       }
-    .submit-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color:blue;
-      color:white;
-      cursor: pointer;
+    }
+    .form__submit{
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color:blue;
+    color:white;
+    cursor: pointer;
     }
   }
-}
