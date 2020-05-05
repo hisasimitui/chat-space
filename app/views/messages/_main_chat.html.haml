@@ -14,16 +14,7 @@
   .messages
     = render @messages
 
-    %div{ class:'message', data:{message_id:'5440'}}
-      message__info
-      %p.message__upper-info__talker provisional
-      %p.message__upper-info__date 2020/4/26(sun) 20:44:55
-      %p.message__text お早う御座います
-      %div{ class:'message', data:{message_id:'5441'}}
-      .message__upper-info
-      %p.message__upper-info__talker provisional
-      %p.message__upper-info__date 2020/4/26(sun) 20:4５:33
-      %p.message__text お疲れ様です
+    
   .form
     
     = form_for [@group, @message] do |f|
