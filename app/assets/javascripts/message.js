@@ -72,7 +72,7 @@ var reloadMessages = function() {
     data: {id: last_message_id}
   })
   .done(function(messages) {
-    console.log(messages)
+    
     if (messages.length !== 0) {
     var insertHTML = '';
     $.each(messages, function(i, message) {
@@ -87,6 +87,6 @@ var reloadMessages = function() {
   });
 };
 if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 7000);
+  setInterval(reloadMessages, 2000);
     }
 });
