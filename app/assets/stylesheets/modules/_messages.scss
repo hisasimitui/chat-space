@@ -85,13 +85,20 @@ a{
       &__current-group{
         font-size: 20px;
         color:black;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
       &__member-list{
         display: flex;
         font-size: 12px;
         color: #999999;
+        margin-left: 5px;
       }
+      &__member-list__member{
+        margin-left: 3px;
+      }
+      
+      
+    
     }
     a{
     color: blue;

@@ -9,11 +9,10 @@
           - @group.users.each do |user|
             %li.main-header__left-box__member-list__member
               = user.name
-    =link_to '/groups/2033/edit' do
+    =link_to edit_group_path(@group) do
       .main-header__edit-btn Edit
   .messages
     = render @messages
-
     
   .form
     
@@ -25,4 +24,4 @@
           = f.file_field :image, class: 'form__mask__image__file hidden'
       = f.submit 'Send', class: 'form__submit'
     
-    
+  
