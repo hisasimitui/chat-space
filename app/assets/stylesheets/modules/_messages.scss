@@ -28,13 +28,15 @@ a{
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
+      
       &__box__user-name{
-        font-size: 30px;
+        font-size: 1px;
+        
       }
       &__menu{
         display: flex;
         &__new-group{
-          margin-left: 1px;
+          margin-left: 10px;
           a{
           color: white;
           }
@@ -54,19 +56,27 @@ a{
     background-color: #2f3e51;
     padding: 20px 20px 0;
     overflow: scroll;
-    a{
-    color: white;
+    
+    // a{
+    // color: white;
       .group{
+        margin-bottom: 5px;
+        font-size: 11px;
         margin-bottom: 40px;
-        &__group-name{
+        a{
+          color: white;
+        
+        .new-group__name{
           font-size: 15px;
-          margin-bottom: 5px;
+          margin-bottom: 10px;
+        }
         }
         &__latest-message{
           font-size: 11px;
+          
         }
       }
-    }     
+        
   } 
 }
 
@@ -120,7 +130,7 @@ a{
     overflow: scroll;
     .message{
       padding-bottom: 40px;
-      &__upper-info{
+      .upper-message{
         display: flex;
         margin-bottom: 10px;
         &__talker{
